@@ -4,6 +4,7 @@
 @import "components/navbar";
 @import "ejemplos/datos";
 @import "ejemplos/bucles";
+
 body{
   font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
   font-size: large;
@@ -13,13 +14,33 @@ body{
   justify-content: space-between;
 }
 
+footer{
+  text-align: center;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+}
 p{
   margin: 1em 0;
 }
+
+
 .row{
   width: calc(100% - 4em);
   padding: 2em;
   display: flex;
   flex-wrap: wrap;
+}
+.d-flex{
+  display: flex;
+}
+.flex-column{
+  flex-direction: column;
+}
+.space-around{
+  justify-content: space-around;
+}
+.space-between{
   justify-content: space-between;
 }

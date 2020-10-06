@@ -43,6 +43,31 @@
   background-color: #222222;
 }
 
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+@media (min-width: 600px) {
+  .btn {
+    background-color: red;
+    color: white;
+  }
+}
+
+.btn-success {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  background-color: gold;
+}
+@media (min-width: 768px) {
+  .btn-success {
+    background-color: green;
+    color: white;
+  }
+}
+
 nav {
   font-size: 30px;
   font-weight: bold;
@@ -94,31 +119,6 @@ nav .burger {
 @media (min-width: 768px) {
   nav .burger {
     display: none;
-  }
-}
-
-.btn {
-  display: inline-block;
-  text-decoration: none;
-  padding: 0.5em 1em;
-}
-@media (min-width: 600px) {
-  .btn {
-    background-color: red;
-    color: white;
-  }
-}
-
-.btn-success {
-  display: inline-block;
-  text-decoration: none;
-  padding: 0.5em 1em;
-  background-color: gold;
-}
-@media (min-width: 768px) {
-  .btn-success {
-    background-color: green;
-    color: white;
   }
 }
 
@@ -277,6 +277,15 @@ body {
   justify-content: space-between;
 }
 
+footer {
+  text-align: center;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
 p {
   margin: 1em 0;
 }
@@ -286,6 +295,21 @@ p {
   padding: 2em;
   display: flex;
   flex-wrap: wrap;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-between {
   justify-content: space-between;
 }
 
