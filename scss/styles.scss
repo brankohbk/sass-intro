@@ -1,0 +1,25 @@
+@import "components/normalize";
+@import "components/colors";
+@import "components/button";
+@import "components/navbar";
+@import "ejemplos/datos";
+@import "ejemplos/bucles";
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-size: large;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+p{
+  margin: 1em 0;
+}
+.row{
+  width: calc(100% - 4em);
+  padding: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

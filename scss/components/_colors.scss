@@ -1,0 +1,17 @@
+$colors:(
+  primary:#333,
+  secondary:#aaa,
+  tertiary:#eee,
+  success: rgb(21, 146, 21),
+  dark:#222222
+);
+
+
+@each $color,$value in $colors {
+  .text-#{$color} {
+    color:$value;
+  }
+  .bg-#{$color}{
+    background-color: $value;
+  }
+}

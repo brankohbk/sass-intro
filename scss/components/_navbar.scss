@@ -1,0 +1,52 @@
+nav {
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1em;
+  flex-wrap: wrap;
+  min-height: 80px;
+ 
+  img {
+    max-height: 80px;
+  }
+  ul {
+    display: none;
+    background-color: #000;
+    width: 50%;
+      
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+      list-style: none;
+      &:hover {
+        background-color: map-get($colors, "secondary" );
+        color: map-get($colors, "primary" );
+      }
+    }
+    
+    &.expand{
+      height: 50vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      li{
+        justify-content: flex-start;
+        padding-left: 1em;
+      }
+    }  
+    @media (min-width:768px) {
+      display: flex;
+    }
+  }
+  .burger{
+    height: 50px;
+    margin: auto 0 auto auto;
+    @media (min-width:768px){
+      display: none;
+    }
+  }
+}

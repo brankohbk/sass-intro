@@ -1,0 +1,23 @@
+$breakpoints: (
+  m: 768px,
+  l: 960px,
+);
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: $i * 100% / 12;
+  }
+}
+@media screen and (min-width: map-get($breakpoints,"m")) {
+  @for $i from 1 through 12 {
+    .col-md-#{$i} {
+      width: $i * 100% / 12;
+    }
+  }
+}
+@media screen and (min-width: map-get($breakpoints,"l")) {
+  @for $i from 1 through 12 {
+    .col-lg-#{$i} {
+      width: $i * 100% / 12;
+    }
+  }
+}
